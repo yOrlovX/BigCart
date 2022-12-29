@@ -49,13 +49,8 @@ extension OnboardView {
           OnboardProgressView(onboardState: $onboardState)
           Button(action: { self.onboardState += 1}) {
             Text("Get started")
-              .foregroundColor(.white)
-              .frame(height: 60)
-              .frame(maxWidth: .infinity)
-              .background(Colors.primaryDark)
-              .cornerRadius(20)
-              .padding(.horizontal, 34)
           }
+          .modifier(PrimaryButtonModifiers())
         }
       }
       .padding(EdgeInsets(top: 50, leading: 0, bottom: 50, trailing: 0))
@@ -83,13 +78,8 @@ extension OnboardView {
           OnboardProgressView(onboardState: $onboardState)
           Button(action: { self.onboardState += 1 }) {
             Text("Get started")
-              .foregroundColor(.white)
-              .frame(height: 60)
-              .frame(maxWidth: .infinity)
-              .background(Colors.primaryDark)
-              .cornerRadius(20)
-              .padding(.horizontal, 34)
           }
+          .modifier(PrimaryButtonModifiers())
         }
       }
       .padding(EdgeInsets(top: 50, leading: 0, bottom: 50, trailing: 0))
@@ -117,13 +107,8 @@ extension OnboardView {
           OnboardProgressView(onboardState: $onboardState)
           Button(action: {self.onboardState += 1}) {
             Text("Get started")
-              .foregroundColor(.white)
-              .frame(height: 60)
-              .frame(maxWidth: .infinity)
-              .background(Colors.primaryDark)
-              .cornerRadius(20)
-              .padding(.horizontal, 34)
           }
+          .modifier(PrimaryButtonModifiers())
         }
       }
       .padding(EdgeInsets(top: 50, leading: 0, bottom: 50, trailing: 0))
@@ -151,13 +136,8 @@ extension OnboardView {
           OnboardProgressView(onboardState: $onboardState)
           NavigationLink(destination: WelcomeView()) {
               Text("Get started")
-                .foregroundColor(.white)
-                .frame(height: 60)
-                .frame(maxWidth: .infinity)
-                .background(Colors.primaryDark)
-                .cornerRadius(20)
-                .padding(.horizontal, 34)
           }
+          .modifier(PrimaryButtonModifiers())
         }
       }
       .padding(EdgeInsets(top: 50, leading: 0, bottom: 50, trailing: 0))

@@ -21,6 +21,7 @@ struct TextFieldViewModifiers: ViewModifier {
 struct PrimaryButtonModifiers: ViewModifier {
   func body(content: Content) -> some View {
     content
+      .foregroundColor(.white)
       .frame(height: 60)
       .frame(maxWidth: UIScreen.main.bounds.width - 34)
       .background(LinearGradient(gradient: Gradient(colors: [Colors.primary, Colors.primaryDark]), startPoint: .leading, endPoint: .trailing))
