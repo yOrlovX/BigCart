@@ -20,6 +20,7 @@ struct WelcomeView: View {
       }
     }
     .ignoresSafeArea()
+    .navigationTitle("")
   }
 }
 
@@ -88,6 +89,7 @@ extension WelcomeView {
         NavigationLink(destination: LoginView()) {
           Text("Login")
             .font(.system(size: 15, weight: .medium))
+            .foregroundColor(.black)
         }
       }
       .padding(.bottom, 40)

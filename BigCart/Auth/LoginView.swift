@@ -126,7 +126,7 @@ extension LoginView {
         Text("Already have an account ?")
           .font(.system(size: 15, weight: .light))
           .foregroundColor(.gray)
-        Text("Login")
+        Text("Sign up")
           .font(.system(size: 15, weight: .medium))
       }
       .padding(.bottom, 40)

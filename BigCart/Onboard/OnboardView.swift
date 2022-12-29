@@ -26,7 +26,10 @@ struct OnboardView: View {
           EmptyView()
         }
       }
+      .navigationTitle("")
     }
+    .accentColor(.white)
+    .navigationViewStyle(StackNavigationViewStyle())
   }
 }
 
