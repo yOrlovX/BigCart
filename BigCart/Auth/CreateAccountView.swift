@@ -14,27 +14,23 @@ struct CreateAccountView: View {
   @State private var isRemember: Bool = false
   
   var body: some View {
-    VStack(spacing: 0) {
-      Image("auth3")
-        .resizable()
-        .scaledToFill()
-        .ignoresSafeArea(edges: .top)
-      VStack(spacing: 25) {
+    ZStack {
+      VStack(spacing: 0) {
+        GeometryReader { _ in
+          Image("auth3")
+            .resizable()
+            .scaledToFill()
+        }
         bottomContainer
-        textFieldsContainer
-        buttonsContainer
       }
-      .frame(maxWidth: .infinity)
-      .background(Colors.backgroundGray)
-      .cornerRadius(20)
-      .ignoresSafeArea(edges: .bottom)
     }
+    .ignoresSafeArea()
   }
 }
 
 extension CreateAccountView {
   private var bottomContainer: some View {
-    HStack {
+    VStack {
       VStack(alignment: .leading, spacing: 2) {
         Text("Create account")
           .font(.system(size: 25, weight: .semibold))
@@ -46,8 +42,14 @@ extension CreateAccountView {
           .padding(.horizontal)
       }
       .padding(.top, 30)
-      Spacer()
+     
+      textFieldsContainer
+      buttonsContainer
     }
+    .frame(maxWidth: .infinity)
+    .background(Colors.backgroundGray)
+    .cornerRadius(20)
+    .ignoresSafeArea(edges: .bottom)
   }
   
   private var textFieldsContainer: some View {
