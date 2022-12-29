@@ -66,7 +66,7 @@ extension WelcomeView {
         .cornerRadius(20)
       }
       
-      Button(action: {}) {
+      NavigationLink(destination: CreateAccountView()) {
         HStack {
           Image(systemName: "person.circle")
             .resizable()
@@ -75,22 +75,20 @@ extension WelcomeView {
             .padding(.leading, 33)
           Spacer()
           Text("Create an account")
-            .font(.system(size: 15, weight: .medium))
-            .foregroundColor(.white)
+            
           Spacer()
           Spacer()
         }
-        .frame(height: 60)
-        .frame(maxWidth: UIScreen.main.bounds.width - 34)
-        .background(LinearGradient(gradient: Gradient(colors: [Colors.primary, Colors.primaryDark]), startPoint: .leading, endPoint: .trailing))
-        .cornerRadius(20)
+        .modifier(PrimaryButtonModifiers())
       }
       HStack(spacing: 5) {
         Text("Already have an account ?")
           .font(.system(size: 15, weight: .light))
           .foregroundColor(.gray)
-        Text("Login")
-          .font(.system(size: 15, weight: .medium))
+        NavigationLink(destination: LoginView()) {
+          Text("Login")
+            .font(.system(size: 15, weight: .medium))
+        }
       }
       .padding(.bottom, 40)
     }
