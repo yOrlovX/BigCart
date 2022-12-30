@@ -95,15 +95,13 @@ extension CreateAccountView {
         }
       }
       .modifier(TextFieldViewModifiers())
-      
-
     }
   }
   
   private var buttonsContainer: some View {
     VStack {      
       Button(action: {}) {
-        Text("Signup")
+        Text("Sign up")
           .font(.system(size: 15, weight: .semibold))
           .foregroundColor(.white)
       }
