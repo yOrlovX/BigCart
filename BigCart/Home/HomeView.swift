@@ -9,20 +9,26 @@ import SwiftUI
 
 struct HomeView: View {
   var categoriesData = CategoriesModel.dummyData
+  var productsData = ProductModel.dummyData
+  var columns = [GridItem(.flexible(), spacing: 10),
+                 GridItem(.flexible(), spacing: 10)]
   
     var body: some View {
       VStack {
 //        Text("Searchbar here -<<<<<<<<<<<<<<<<")
-        discountContainer
-        categoriesContainer
-        Spacer()
         
+        ScrollView(.vertical, showsIndicators: false) {
+          discountContainer
+          categoriesContainer
+            .padding(.top, 20)
+          featuredProductsContainer
+            .padding(.top, 20)
+        }
       }
       .navigationTitle("")
-      .accentColor(.black)
+      .background(Colors.backgroundGray)
     }
 }
-
 
 extension HomeView {
   private var categoriesContainer: some View {
@@ -54,7 +60,7 @@ extension HomeView {
         }
       }
     }
-    .padding(.horizontal, 34)    
+    .padding(.horizontal, 17)
   }
   
   private var discountContainer: some View {
@@ -62,6 +68,27 @@ extension HomeView {
       Image("homeDiscount")
         .resizable()
         .scaledToFit()
+    }
+    .padding(.horizontal, 17)
+  }
+  
+  private var featuredProductsContainer: some View {
+    VStack(spacing: 17) {
+      HStack {
+        Text("Featured products")
+          .font(.system(size: 18, weight: .semibold))
+        Spacer()
+        NavigationLink(destination: CategoriesView()) {
+          Image(systemName: "chevron.right")
+            .foregroundColor(.gray)
+        }
+      }
+      
+      LazyVGrid(columns: columns) {
+        ForEach(productsData, id: \.self) { data in
+          ProductCell(image: data.image, price: data.price, name: data.name, weight: data.weight, isFavorite: data.isFavorite)
+        }
+      }
     }
     .padding(.horizontal, 17)
   }

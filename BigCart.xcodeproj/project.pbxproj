@@ -15,6 +15,7 @@
 		9252E17C295EE23800FD4FCC /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252E17B295EE23800FD4FCC /* CategoriesModel.swift */; };
 		9252E17E295EEC9C00FD4FCC /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252E17D295EEC9C00FD4FCC /* CategoriesView.swift */; };
 		9252E181295EFB7C00FD4FCC /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252E180295EFB7C00FD4FCC /* ProductCell.swift */; };
+		9252E183295F09D400FD4FCC /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252E182295F09D400FD4FCC /* ProductModel.swift */; };
 		9267B34D2954D32700CBB645 /* BigCartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267B34C2954D32700CBB645 /* BigCartApp.swift */; };
 		9267B3512954D32900CBB645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9267B3502954D32900CBB645 /* Assets.xcassets */; };
 		9267B3542954D32900CBB645 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9267B3532954D32900CBB645 /* Preview Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		9252E17B295EE23800FD4FCC /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
 		9252E17D295EEC9C00FD4FCC /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		9252E180295EFB7C00FD4FCC /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		9252E182295F09D400FD4FCC /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		9267B3492954D32700CBB645 /* BigCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9267B34C2954D32700CBB645 /* BigCartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCartApp.swift; sourceTree = "<group>"; };
 		9267B3502954D32900CBB645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				9252E180295EFB7C00FD4FCC /* ProductCell.swift */,
+				9252E182295F09D400FD4FCC /* ProductModel.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				9267B3612954DAB400CBB645 /* OnboardProgressView.swift in Sources */,
 				9267B35F2954D50400CBB645 /* Colors.swift in Sources */,
 				9252E17E295EEC9C00FD4FCC /* CategoriesView.swift in Sources */,
+				9252E183295F09D400FD4FCC /* ProductModel.swift in Sources */,
 				9252E181295EFB7C00FD4FCC /* ProductCell.swift in Sources */,
 				9210BEA1295585FA002621A8 /* OnboardView.swift in Sources */,
 				9267B34D2954D32700CBB645 /* BigCartApp.swift in Sources */,
