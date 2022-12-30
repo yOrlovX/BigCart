@@ -28,7 +28,7 @@ struct OnboardView: View {
       }
       .navigationTitle("")
     }
-    .accentColor(.white)
+    .accentColor(Colors.primaryDark)
     .navigationViewStyle(StackNavigationViewStyle())
   }
 }

@@ -12,10 +12,14 @@ struct HomeView: View {
   
     var body: some View {
       VStack {
-        Text("Searchbar here -<<<<<<<<<<<<<<<<")
+//        Text("Searchbar here -<<<<<<<<<<<<<<<<")
+        discountContainer
         categoriesContainer
+        Spacer()
         
       }
+      .navigationTitle("")
+      .accentColor(.black)
     }
 }
 
@@ -27,8 +31,10 @@ extension HomeView {
         Text("Categories")
           .font(.system(size: 18, weight: .semibold))
         Spacer()
-        Image(systemName: "chevron.right")
-          .foregroundColor(.gray)
+        NavigationLink(destination: CategoriesView()) {
+          Image(systemName: "chevron.right")
+            .foregroundColor(.gray)
+        }
       }
       
       ScrollView(.horizontal, showsIndicators: false) {
@@ -48,7 +54,16 @@ extension HomeView {
         }
       }
     }
-    .padding(.horizontal, 34)
+    .padding(.horizontal, 34)    
+  }
+  
+  private var discountContainer: some View {
+    ZStack {
+      Image("homeDiscount")
+        .resizable()
+        .scaledToFit()
+    }
+    .padding(.horizontal, 17)
   }
 }
 

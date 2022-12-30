@@ -25,6 +25,7 @@ struct LoginView: View {
       }
     }
     .ignoresSafeArea()
+    .navigationTitle("")
   }
 }
 
@@ -116,12 +117,13 @@ extension LoginView {
       .padding(.horizontal)
       .padding(.vertical, 15)
       
-      Button(action: {}) {
+      NavigationLink(destination: HomeView()) {
         Text("Login")
           .font(.system(size: 15, weight: .semibold))
           .foregroundColor(.white)
       }
       .modifier(PrimaryButtonModifiers())
+      
       HStack(spacing: 5) {
         Text("Already have an account ?")
           .font(.system(size: 15, weight: .light))
