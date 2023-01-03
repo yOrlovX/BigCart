@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
   var categoriesData = CategoriesModel.dummyData
-  var productsData = ProductModel.dummyData
+  let model = FeaturedProductsDataStore()
   var columns = [GridItem(.flexible(), spacing: 10),
                  GridItem(.flexible(), spacing: 10)]
   
@@ -21,7 +21,8 @@ struct HomeView: View {
           discountContainer
           categoriesContainer
             .padding(.top, 20)
-          featuredProductsContainer
+          FeaturedProductsView()
+            .configureView()
             .padding(.top, 20)
         }
       }
@@ -29,6 +30,7 @@ struct HomeView: View {
       .background(Colors.backgroundGray)
     }
 }
+
 
 extension HomeView {
   private var categoriesContainer: some View {
@@ -71,28 +73,28 @@ extension HomeView {
     }
     .padding(.horizontal, 17)
   }
-  
-  private var featuredProductsContainer: some View {
-    VStack(spacing: 17) {
-      HStack {
-        Text("Featured products")
-          .font(.system(size: 18, weight: .semibold))
-        Spacer()
-        NavigationLink(destination: CategoriesView()) {
-          Image(systemName: "chevron.right")
-            .foregroundColor(.gray)
-        }
-      }
-      
-      LazyVGrid(columns: columns) {
-        ForEach(productsData, id: \.self) { data in
-          ProductCell(image: data.image, price: data.price, name: data.name, weight: data.weight, isFavorite: data.isFavorite)
-        }
-      }
-    }
-    .padding(.horizontal, 17)
-  }
 }
+//  private var featuredProductsContainer: some View {
+//    VStack(spacing: 17) {
+//      HStack {
+//        Text("Featured products")
+//          .font(.system(size: 18, weight: .semibold))
+//        Spacer()
+//        NavigationLink(destination: CategoriesView()) {
+//          Image(systemName: "chevron.right")
+//            .foregroundColor(.gray)
+//        }
+//      }
+//
+//      LazyVGrid(columns: columns) {
+//        ForEach(productsData, id: \.self) { data in
+//          ProductCell(image: data.image, price: data.price, name: data.name, weight: data.weight, isFavorite: data.isFavorite)
+//        }
+//      }
+//    }
+//    .padding(.horizontal, 17)
+//  }
+//}
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

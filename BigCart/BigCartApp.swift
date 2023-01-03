@@ -11,7 +11,7 @@ import SwiftUI
 struct BigCartApp: App {
     var body: some Scene {
         WindowGroup {
-          OnboardView()
+          HomeView()
         }
     }
 }

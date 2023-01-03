@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		9210BEA1295585FA002621A8 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210BEA0295585FA002621A8 /* OnboardView.swift */; };
 		9210BEA42955BD6E002621A8 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210BEA32955BD6E002621A8 /* WelcomeView.swift */; };
+		9238C270296315AC003014B2 /* FeaturedProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238C26F296315AC003014B2 /* FeaturedProductsView.swift */; };
+		9238C27229631662003014B2 /* FeaturedProductsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238C27129631662003014B2 /* FeaturedProductsInteractor.swift */; };
+		9238C27429631725003014B2 /* FeaturedProductsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238C27329631725003014B2 /* FeaturedProductsPresenter.swift */; };
+		9238C276296319DF003014B2 /* FeaturedProductsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238C275296319DF003014B2 /* FeaturedProductsDataStore.swift */; };
+		9238C27829632215003014B2 /* CreateProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238C27729632215003014B2 /* CreateProductsModel.swift */; };
 		923FAC8A295615F900C12CDB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923FAC89295615F900C12CDB /* LoginView.swift */; };
 		923FAC8D29561BAF00C12CDB /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923FAC8C29561BAF00C12CDB /* ViewModifiers.swift */; };
 		9252E179295EC10E00FD4FCC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252E178295EC10E00FD4FCC /* HomeView.swift */; };
@@ -22,11 +27,17 @@
 		9267B35F2954D50400CBB645 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267B35E2954D50400CBB645 /* Colors.swift */; };
 		9267B3612954DAB400CBB645 /* OnboardProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267B3602954DAB400CBB645 /* OnboardProgressView.swift */; };
 		92B753432958492E006B5CFC /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B753422958492E006B5CFC /* CreateAccountView.swift */; };
+		92DFF6F329642B0800C0AE08 /* FeaturedProductsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFF6F229642B0800C0AE08 /* FeaturedProductsConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9210BEA0295585FA002621A8 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		9210BEA32955BD6E002621A8 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		9238C26F296315AC003014B2 /* FeaturedProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedProductsView.swift; sourceTree = "<group>"; };
+		9238C27129631662003014B2 /* FeaturedProductsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedProductsInteractor.swift; sourceTree = "<group>"; };
+		9238C27329631725003014B2 /* FeaturedProductsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedProductsPresenter.swift; sourceTree = "<group>"; };
+		9238C275296319DF003014B2 /* FeaturedProductsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedProductsDataStore.swift; sourceTree = "<group>"; };
+		9238C27729632215003014B2 /* CreateProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProductsModel.swift; sourceTree = "<group>"; };
 		923FAC89295615F900C12CDB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		923FAC8C29561BAF00C12CDB /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		9252E178295EC10E00FD4FCC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -41,6 +52,7 @@
 		9267B35E2954D50400CBB645 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9267B3602954DAB400CBB645 /* OnboardProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardProgressView.swift; sourceTree = "<group>"; };
 		92B753422958492E006B5CFC /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		92DFF6F229642B0800C0AE08 /* FeaturedProductsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedProductsConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,12 @@
 			children = (
 				9252E178295EC10E00FD4FCC /* HomeView.swift */,
 				9252E17D295EEC9C00FD4FCC /* CategoriesView.swift */,
+				9238C26F296315AC003014B2 /* FeaturedProductsView.swift */,
+				92DFF6F229642B0800C0AE08 /* FeaturedProductsConfigurator.swift */,
+				9238C27129631662003014B2 /* FeaturedProductsInteractor.swift */,
+				9238C27329631725003014B2 /* FeaturedProductsPresenter.swift */,
+				9238C275296319DF003014B2 /* FeaturedProductsDataStore.swift */,
+				9238C27729632215003014B2 /* CreateProductsModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -228,12 +246,18 @@
 			files = (
 				923FAC8A295615F900C12CDB /* LoginView.swift in Sources */,
 				9210BEA42955BD6E002621A8 /* WelcomeView.swift in Sources */,
+				9238C270296315AC003014B2 /* FeaturedProductsView.swift in Sources */,
+				9238C27229631662003014B2 /* FeaturedProductsInteractor.swift in Sources */,
 				92B753432958492E006B5CFC /* CreateAccountView.swift in Sources */,
+				9238C276296319DF003014B2 /* FeaturedProductsDataStore.swift in Sources */,
 				9252E179295EC10E00FD4FCC /* HomeView.swift in Sources */,
+				9238C27829632215003014B2 /* CreateProductsModel.swift in Sources */,
+				9238C27429631725003014B2 /* FeaturedProductsPresenter.swift in Sources */,
 				923FAC8D29561BAF00C12CDB /* ViewModifiers.swift in Sources */,
 				9252E17C295EE23800FD4FCC /* CategoriesModel.swift in Sources */,
 				9267B3612954DAB400CBB645 /* OnboardProgressView.swift in Sources */,
 				9267B35F2954D50400CBB645 /* Colors.swift in Sources */,
+				92DFF6F329642B0800C0AE08 /* FeaturedProductsConfigurator.swift in Sources */,
 				9252E17E295EEC9C00FD4FCC /* CategoriesView.swift in Sources */,
 				9252E183295F09D400FD4FCC /* ProductModel.swift in Sources */,
 				9252E181295EFB7C00FD4FCC /* ProductCell.swift in Sources */,
